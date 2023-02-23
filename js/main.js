@@ -9,6 +9,11 @@ const domButton = document.querySelector('#leggidati');
 
 domButton.addEventListener('click', 
     function () {
+        const nomepsg = document.getElementById('nomepasseggero');
+        const nomepasseggero = nomepsg.value;
+        console.log(nomepsg)
+        document.getElementById("npasseggero").innerHTML = `Passeggero: ${nomepasseggero}`;
+
         const etaDom = document.getElementById('etapasseggero');
         const etapasseggero = etaDom.value;
         console.log(etapasseggero)
