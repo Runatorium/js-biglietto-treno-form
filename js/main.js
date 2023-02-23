@@ -12,10 +12,12 @@ domButton.addEventListener('click',
         const etaDom = document.getElementById('etapasseggero');
         const etapasseggero = etaDom.value;
         console.log(etapasseggero)
+        document.getElementById("etapasseggero").innerHTML = `l'età del passeggero è:${etapasseggero}`;
 
         const kmDom = document.getElementById('kmpercorrere');
         const kmdapercorrere = kmDom.value;
         console.log(kmdapercorrere)
+        document.getElementById("kmpercorrere").innerHTML = `I Km da percorrere sono:`; 
 
         let costokmutente = (kmdapercorrere * ppkm);
 
@@ -26,6 +28,7 @@ domButton.addEventListener('click',
             let prezzofinale = parseFloat((costokmutente * 80) /100).toFixed(2)
             console.log("il costo finale è " + prezzofinale);   
             document.getElementById("costofinale").innerHTML = `il prezzo del biglietto è: ${prezzofinale} € (sconto del 20%)`;   
+            
             
             } else if (etapasseggero >= over65){
             console.log("L'utente è over65")
@@ -39,10 +42,9 @@ domButton.addEventListener('click',
             document.getElementById("costofinale").innerHTML = `il prezzo del biglietto è: ${prezzofinale} €`;  
                 
             }
-
-
+            
         }  
-        //Price Calculator//      
+        //Price Calculator//     
 );
 //Datareader//
 
