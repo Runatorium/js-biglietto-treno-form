@@ -12,12 +12,12 @@ domButton.addEventListener('click',
         const etaDom = document.getElementById('etapasseggero');
         const etapasseggero = etaDom.value;
         console.log(etapasseggero)
-        document.getElementById("etapasseggero").innerHTML = `l'età del passeggero è:${etapasseggero}`;
+        document.getElementById("displayetapsg").innerHTML = `l'età del passeggero è: ${etapasseggero} anni`;
 
         const kmDom = document.getElementById('kmpercorrere');
         const kmdapercorrere = kmDom.value;
         console.log(kmdapercorrere)
-        document.getElementById("kmpercorrere").innerHTML = `I Km da percorrere sono:`; 
+        document.getElementById("displaykmpercorrere").innerHTML = `Il percorso è lungo: ${kmdapercorrere} km`; 
 
         let costokmutente = (kmdapercorrere * ppkm);
 
@@ -61,5 +61,3 @@ domReset.addEventListener('click',
     }
 );
 //Reset Option//
-
-
