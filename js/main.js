@@ -19,6 +19,15 @@ domButton.addEventListener('click',
         console.log(kmdapercorrere)
         document.getElementById("displaykmpercorrere").innerHTML = `Il percorso è lungo: ${kmdapercorrere} km`; 
 
+        const rngnumber = Math.floor((Math.random() * 999) +1 ) + 9000;
+        document.getElementById("Cpnumber").innerHTML = `Codice CP: ${rngnumber}`;
+
+        const rngnumber2 = Math.floor((Math.random() * 9)) + 1;
+        document.getElementById("Ncarrozza").innerHTML = `Carrozza: ${rngnumber2}`;
+
+
+
+
         let costokmutente = (kmdapercorrere * ppkm);
 
         console.log(costokmutente);
@@ -61,3 +70,8 @@ domReset.addEventListener('click',
     }
 );
 //Reset Option//
+
+
+
+
+        
